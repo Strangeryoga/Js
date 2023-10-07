@@ -1,0 +1,35 @@
+"use strict";  //treat all JS code as newer version
+
+// alert(3+3)  // we are using nodejs, not browser
+
+console.log(3
+    +
+    3); // code readability should be high
+
+console.log("Tejas");
+
+
+let name="tejass"
+let age="21"
+let isLoggedIn=true
+let state;
+
+//numebr => 2 to power 53
+//bigInt
+//string => ""
+//boolean => true/false
+//null => stand alone value
+//undefined=>
+//symbol => unique
+
+// two symbols with the same description
+ const value1 = Symbol('hello');
+ const value2 = Symbol('hello');
+ console.log(value1 === value2); // false
+//https://www.programiz.com/javascript/symbol
+
+
+//object
+
+console.log(typeof undefined); //undefiend
+console.log(typeof null);  //object
