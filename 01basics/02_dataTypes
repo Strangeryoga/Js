@@ -8,6 +8,9 @@ console.log(3
 
 console.log("Tejas");
 
+//https://tc39.es/  //standard's of js
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
 
 let name="tejass"
 let age="21"
