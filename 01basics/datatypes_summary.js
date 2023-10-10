@@ -36,4 +36,6 @@ console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
-/
+// Js is dynamic type or static type
+// Dynamic type
+// https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_typing
