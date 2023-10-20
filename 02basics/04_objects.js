@@ -73,19 +73,32 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor} = course
+// console.log(courseInstructor);  kunal
 
-// console.log(courseInstructor);  error
+const {courseInstructor: instructor} = course
 console.log(instructor); // kunal
 
+
+// {} inside the () is the concept of destructring it will give the value which has passed
+const navbar = ({company}) => {
+
+}
+navbar(company = 'hrx')
+
+// this is json format
 // {
 //     "name": "kunal",
 //     "coursename": "devops",
 //     "price": "free"
 // }
 
+// sometimes we get data in array format
 [
     {},
     {},
     {}
 ]
+
+// https://randomuser.me/
+// https://jsonformatter.org/
