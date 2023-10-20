@@ -42,3 +42,6 @@ loginUserMsg("hello") // <- this is not returning anything because we didn't tel
 console.log(loginUserMsg()); // undefined just logged in
 
 console.log(loginUserMsg()) // Please enter a username
+
+// when the default is giving
+console.log(loginUserMsg()); // sam just logged in
