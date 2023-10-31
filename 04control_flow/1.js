@@ -8,6 +8,7 @@ const temperature = 41
 // } else {
 //     console.log("temperature is greater than 50");
 // }
+// temperature is greater than 50
 
 // console.log("Execute");
 // <, >, <=, >=, ==, !=, ===, !==
@@ -16,16 +17,17 @@ const temperature = 41
 
 // if (score > 100) {
 //     let power = "fly"
-//     console.log(`User power: ${power}`);
+//     console.log(`User power: ${power}`); //User power: fly
 // }
 
-// console.log(`User power: ${power}`);
+// console.log(`User power: ${power}`); //error
 
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2"); <--- immature code
 
+// nesting
 // if (balance < 500) {
 //     console.log("less than 500");
 // } else if (balance < 750) {
