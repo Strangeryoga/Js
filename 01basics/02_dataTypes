@@ -36,3 +36,38 @@ let state;
 
 console.log(typeof undefined); //undefiend
 console.log(typeof null);  //object
+
+
+
+/*  What are Data Types?
+
+Data types in programming are like categories that tell the computer what kind of data you're working with.
+
+JavaScript has several built-in data types, which can be categorized as follows:
+
+- String: Used for textual data and enclosed in single or double quotes.
+
+- Number: Represents numeric values, including integers and floating-point numbers.
+
+- Boolean: Represents true or false values, often used in conditional statements.
+
+- Undefined: "Undefined" means a variable exists but has no value;
+
+- Null: "null" means it's intentionally empty, like an empty box.
+
+- Object: A collection of key-value pairs, allowing you to create complex data structures.
+
+- Array: An ordered list of values, accessible by their index.
+
+* Working with Data Types in JavaScript:
+
+• Concatenate Strings: Use the (+)operator to combine strings, like adding names to greetings.
+
+let greeting = "Hello,"; 
+let name = "Aina"; 
+let message = greeting + name; // Results in "Hello, Aina"
+
+• Mathematical Operations: Perform calculations with numbers, such as addition or subtraction.
+
+These tools allow you to handle different types of data, manipulate text and numbers, make choices based on conditions, and manage missing or empty data.
+*/
