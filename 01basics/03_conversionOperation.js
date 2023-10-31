@@ -74,3 +74,22 @@ let gameCounter = 100
 console.log(gameCounter);
 
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+
+/* 6. Type Coercion and Conversion
+
+JavaScript employs type coercion, which means it automatically converts data types when needed. 
+For instance, adding a string and a number will result in type coercion, where the number is converted to a string.
+
+You can also explicitly convert data types using functions like ''parseInt()", ''parseFloat()", and ''String()".
+
+Type conversion is when you intentionally change a value from one data type to another. 
+In JavaScript, you can do this using specific functions or operations.
+
+For example, you might want to convert a string containing a number into an actual number so that you can perform mathematical calculations with it
+
+Type conversion allows you to control the data types of your variables, ensuring that they work as you expect in various situations.
+*/
+// https://pbs.twimg.com/media/F8EoV7paYAAFaRO?format=jpg&name=900x900
+// https://pbs.twimg.com/media/F8EoykfbQAATRnQ?format=jpg&name=900x900
+// https://pbs.twimg.com/media/F8EoO_4bEAAAz4t?format=jpg&name=900x900
