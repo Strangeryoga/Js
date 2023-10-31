@@ -72,6 +72,9 @@ const addTwo = function(num){ //<-- this is expression/fnc
     return num + 2
 }
 
+
+
+
 /* 1. What is scope?
 
 Scope in programming refers to the context in which variables and functions are defined and can be accessed.
