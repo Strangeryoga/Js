@@ -24,6 +24,7 @@ if (Object.keys(emptyObj).length === 0) {
 }
 
 // Nullish Coalescing Operator (??): null undefined
+// Coalescing: come together to form one mass or whole.
 
 let val1;
 // val1 = 5 ?? 10
