@@ -1,3 +1,6 @@
+
+// The switch statement is used for multi-way conditional branching based on a specific value.
+
 // switch (key) {
 //     case value:
         
