@@ -1,3 +1,7 @@
+
+// The while loop is useful when you want to continue looping as long as a condition is true.
+
+
 let index = 0
 // while (index <= 10) {
 //     console.log(`Value of index is ${index}`);
