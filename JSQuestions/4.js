@@ -7,5 +7,5 @@ if(a%1===0){
     console.log("integer");
 }
 else{
-    console.log("not a integer");
+    console.log("not a integer"); // not a integer
 }
