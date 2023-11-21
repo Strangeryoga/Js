@@ -58,3 +58,40 @@ language.forEach(e => {
 /* Language is Java and its file type is java
 Language is Python and its file type is py
 Language is C++ and its file type is cpp */
+
+
+// array inside object
+var b = {
+    maths:[12,23,45],
+    physics:[12,23,45],
+    chemistry:[12,23,45]
+};
+
+// console.log(b.maths); // [ 12, 23, 45 ]
+// console.log(b["maths"]); // [ 12, 23, 45 ]
+// console.log(b.maths[0]); // first array item // 12
+
+Object.keys(b).forEach(key => {
+    // console.log(key, b[key]);
+})
+// o/p
+/* maths [ 12, 23, 45 ]
+physics [ 12, 23, 45 ]
+chemistry [ 12, 23, 45 ] */
+
+Object.keys(b).forEach(key => {
+    // console.log(key);
+})
+// o/p
+/* maths
+physics
+chemistry */
+
+Object.entries(b).forEach(entry => {
+    const [key, value] = entry;
+    console.log(key, value);
+  });
+  // o/p
+  /* maths [ 12, 23, 45 ]
+physics [ 12, 23, 45 ]
+chemistry [ 12, 23, 45 ] */

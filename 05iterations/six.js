@@ -43,7 +43,7 @@ mynumber.forEach((e) => {
 })
 // console.log(newNumber); // [ 3, 4, 5, 6 ]
 
-
+// object inside array
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
@@ -88,3 +88,5 @@ userBooks = books.filter((e) => {
     edition: 2007
   }
 ] */
+
+
