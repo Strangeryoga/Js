@@ -1,4 +1,5 @@
 // for of
+// The JavaScript for of statement loops through the values of an iterable object.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 
 // ["", "", ""]
