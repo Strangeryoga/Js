@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Four</title>
+    <title>CAC | DOM</title>
 </head>
-<body>
-    
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li >JavaScript</li>
+    </ul>
 </body>
+<script>
+    // Add
+    function addLanguage(e) {
+        const li=document.createElement('li')
+        li.innerHTML= `${e}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Ruby")
+    addLanguage("Java")
+
+    // Optimize fnc
+    function addOptmLanguage(e) {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(e))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptmLanguage('golang')
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang); // <li>Java</li>
+    // secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    //Edit 2
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<il>TypeScript</li>'
+
+    //remove
+    const rmvLang = document.querySelector('li:last-child')
+    rmvLang.remove()
+
+</script>
 </html>
