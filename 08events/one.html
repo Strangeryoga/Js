@@ -41,7 +41,7 @@
     // Propagation refers to how events travel through the Document Object Model (DOM) tree. The DOM tree is the structure which contains parent/child/sibling elements  in relation to each other. You can think of propagation as electricity running through a wire, until it reaches its destination. The event needs to pass through every node on the DOM until it reaches the end, or if it is forcibly stopped.
 
     // Event Bubbling and Capturing
-    // bubbling travels from the child to parent, and capturing travels from the parent to root
+    // bubbling travels from the child to parent, and capturing travels from the parent to child
 
     // Event bubbling
     document.getElementById('images').addEventListener('click', function(e) {
