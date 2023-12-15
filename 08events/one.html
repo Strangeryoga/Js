@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // This approach didn't gives us lot of functionality to use
+    // document.getElementById('owl').onclick = function() {
+    //     alert("owl is clicked")
+    // }
+
+    // attachEvent() - old browsers
+    // jQuery - onEvent
+
+    // event listeners listens lots of things from mouse, keyboard, drag and drop
+    document.getElementById('owl').addEventListener('click', function(e) {
+        console.log(e); // PointerEvent {isTursted: true, pointerId: 2, width: 1, height: 1, pressure: 0, ...}
+    }, false)
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // Event Propagation
+    // Propagation refers to how events travel through the Document Object Model (DOM) tree. The DOM tree is the structure which contains parent/child/sibling elements  in relation to each other. You can think of propagation as electricity running through a wire, until it reaches its destination. The event needs to pass through every node on the DOM until it reaches the end, or if it is forcibly stopped.
+
+    // Event Bubbling and Capturing
+    // bubbling travels from the child to parent, and capturing travels from the parent to root
+
+    // event bubbling
+    document.getElementById('images').addEventListener('click', function(e) {
+        console.log("clicked inside ul"); 
+    }, false)
+
+    document.getElementById('owl').addEventListener('click', function(e) {
+        console.log("owl clicked"); 
+    }, false)
+    // When clicked inside ul we get
+    // clicked inside ul
+    // But when we click on the owl we get
+    // owl clicked
+    // clicked inside ul
+
+    // event capturing
+    document.getElementById('images').addEventListener('click', function(e) {
+        console.log("clicked inside ul"); 
+    }, true)
+
+    document.getElementById('owl').addEventListener('click', function(e) {
+        console.log("owl clicked"); 
+        e.stopPropagation() // --> this will stop the bubbling we will be only getting owl clicked
+    }, true)
+    // When clicked inside ul we get
+    // clicked inside ul
+    // But when we click on the owl we get
+    // clicked inside ul
+    // owl clicked
+
+    // this will prevent default
+    document.getElementById('google').addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("google clicked"); 
+    }, false)
+
+</script>
+</html>
