@@ -43,7 +43,7 @@
     // Event Bubbling and Capturing
     // bubbling travels from the child to parent, and capturing travels from the parent to root
 
-    // event bubbling
+    // Event bubbling
     document.getElementById('images').addEventListener('click', function(e) {
         console.log("clicked inside ul"); 
     }, false)
@@ -57,7 +57,7 @@
     // owl clicked
     // clicked inside ul
 
-    // event capturing
+    // Event capturing
     document.getElementById('images').addEventListener('click', function(e) {
         console.log("clicked inside ul"); 
     }, true)
@@ -79,5 +79,17 @@
         console.log("google clicked"); 
     }, false)
 
+    // this will remove the image when we click on that
+    document.querySelector('#images').addEventListener('click', function(e) {
+        console.log(e.target.parentNode); // <ul id="images">...<ul/>
+        console.log(e.target.tagName); // IMG IMG LI
+        if(e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeThis = e.target.parentNode
+            removeThis.remove()    
+        }
+    })
+
+    // removeThis.parentNode.removeChild(removeThis) // this will also removes the image
 </script>
 </html>
