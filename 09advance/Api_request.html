@@ -5,25 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRequest</title>
 </head>
-<body style="background-color: #212121;">
-    0	UNSENT	Client has been created. open() not called yet.
-1	OPENED	open() has been called.
-2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
-3	LOADING	Downloading; responseText holds partial data.
-4	DONE	The operation is complete.
+<body style="background-color: #918484;">
+
+    <button id="button">Click Me</button>
+        <img id="img">
+        <h1 id="h1"></h1>
+        <p id="p"></p>
 </body>
 <script>
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    let requestavatarurl;
+    let requestlogin;
+    let requestfollowers;
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl)
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
             const data = JSON.parse(this.responseText)
-            console.log(typeof data);
+            console.log(typeof data);  // object
+            console.log(data.avatar_url)
+            requestavatarurl = data.avatar_url
+            // document.getElementById('img').src = requestavatarurl
+            console.log(data.login)
+            requestlogin = data.login
+            // document.getElementById('h1').innerText = requestlogin
             console.log(data.followers);
+            requestfollowers = data.followers
+            // document.getElementById('p').innerText = requestfollowers
         }
     }
     xhr.send();
+    document.querySelector('#button').addEventListener('click', function(){
+        setTimeout(() => {
+            document.getElementById('img').src = requestavatarurl
+            document.getElementById('h1').innerText = requestlogin
+            document.getElementById('p').innerText = requestfollowers
+            document.getElementById('button').style.display = 'none'
+        },1000)
+        
+    })
 </script>
 </html
