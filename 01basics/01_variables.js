@@ -27,7 +27,7 @@ In JavaScript, you can declare variables using three different keywords: ''var",
 The choice between them depends on the scope and mutability of the variable.
 
 - var: Variables declared with var are function-scoped and can be redeclared within the same scope. 
-However, it's considered outdated and is rarely used in modern JavaScript.
+However, it's considered outdated and is rarely used in modern JavaScript. It adds itself to the window object.
 
 - let: Introduced in ES6 (ECMAScript 2015), 
 let allows you to declare block-scoped variables that can be reassigned. 
