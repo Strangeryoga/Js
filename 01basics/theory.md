@@ -80,3 +80,22 @@ var a = {
 
 delete a.age;
 delete a.name;
+
+
+# Higher Order fncs
+Function is getting another fnc as a value known as HOF. And also fnc is returing another fnc is also known as HOF.
+Ex. forEach, setTimeout
+
+
+# Constructor fncs
+Inside normal fnc we use this and at the time of calling the fnc we use new keyword.
+When you are in that situation when you have to use same properties again and again to make an element at that time we use constructor fncs.
+
+function remote(color){
+    this.radius = 2;
+    this.color = color;
+    this.pressable = true;
+}
+
+var redbtn = new remote("red");
+var greenbtn = new remote("green");
