@@ -1,4 +1,4 @@
-JavaScript Execution Context
+# JavaScript Execution Context
 
 {} ---> Global EC refer to this
 
@@ -6,7 +6,7 @@ Global Execution Context
 Function Execution Contetx
 Eval Execution Context ---> It is a property of global object
 
-Exection of js code happens in 2 phases
+- Exection of js code happens in 2 phases
 
 {} --> Memory Creation Phase
    --> Execution Phase
@@ -17,7 +17,7 @@ Exection of js code happens in 2 phases
 
 ![Alt text](image-2.png)
 
-Call Stack
+- Call Stack
 ![Alt text](image-3.png)
 
 The call stack is a fundamental part of JavaScript's runtime environment. 
