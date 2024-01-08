@@ -1,3 +1,4 @@
+// 3.141593.....
 const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
 
 // console.log(descripter);
