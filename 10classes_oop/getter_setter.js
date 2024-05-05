@@ -1,3 +1,5 @@
+// class based getter and setter
+
 class User {
     constructor(email, password){
         this.email = email;
@@ -21,4 +23,4 @@ class User {
 }
 
 const hitesh = new User("h@hitesh.ai", "abc")
-console.log(hitesh.email);
+console.log(hitesh.email);  // because of get and set keyword the email is become properties not method

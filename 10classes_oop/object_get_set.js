@@ -1,3 +1,5 @@
+// Object based getter and setter
+
 const User = {
     _email: 'h@hc.com',
     _password: "abc",
