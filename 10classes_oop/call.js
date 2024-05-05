@@ -13,3 +13,12 @@ function createUser(username, email, password){
 
 const chai = new createUser("chai", "chai@fb.com", "123")
 console.log(chai);
+
+
+/*
+
+when we call this in the browser it will give us the window object and if we call it inside the node environment it will 
+give us empty
+
+
+*/
