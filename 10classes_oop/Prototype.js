@@ -65,3 +65,19 @@ String.prototype.trueLength = function(){
 anotherUsername.trueLength()
 "hitesh".trueLength()
 "iceTea".trueLength()
+
+
+/* 
+
+js show prototype behaviour. if the js is not able to find the answer then it will go on top of that layer and find the answer 
+and go into the deep till it get's the null value
+
+because of prototype we are able to use this, new, classes, prototype inheritance
+arrow fnc does not have the access of this it is because of prototype
+
+Array ---->  Object -----> null
+String ----> Object -----> null
+Function --> Object -----> null
+
+
+*/
